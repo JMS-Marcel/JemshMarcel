@@ -1,0 +1,155 @@
+@media (max-width:991px) {
+
+    html {
+        font-size: 95%;
+    }
+
+    body {
+        padding-left: 0;
+        overflow-x: hidden;
+    }
+    section{
+        min-height: 94vh;
+        padding: 8.62rem .6rem;
+    }
+    .navbar {
+        top: -90% !important;
+
+    }
+    .left{
+        width: 100%;
+    }
+
+    .navbar.active {
+        top: 0% !important;
+        transition: .4s linear;
+    }
+
+    #menu-btn {
+        display: initial !important;
+    }
+    .svg {
+        width: 70%;
+        margin-bottom: -12.5rem;
+    }
+    .Apropos{
+        flex-wrap: wrap;
+    }
+    aside{
+        align-items: center;
+    }
+    .portrait img{
+    height: 18rem;
+    width: 18rem;
+    margin-left: 3.125rem;
+    border-radius: 14rem;
+    }
+    svg{
+        position: relative;
+        bottom: 8.5rem;
+    }
+    .portrait .dots-circle svg {
+        position: absolute;
+        bottom: -4rem;
+        left: -1rem;
+        width: 28.5rem;
+    }
+ 
+
+}
+
+
+@media (max-width:768px){
+    body {
+        overflow: hidden;
+    }
+    #Accueil {
+        flex-wrap: wrap-reverse;
+    }
+    #menu li{
+        display: block;
+        margin-right: 9rem;
+    }
+ 
+}
+@media (max-width:450px) {
+   
+    .svg {
+        width: 100%;
+    }
+    svg {
+        position: relative;
+        bottom: 6rem;
+        z-index: -999;
+    }
+    .reseux{
+        margin-top: 1.5rem;
+    }
+    .text{
+        padding: 0.5rem 0px ;
+    }
+} 
+
+@media (max-width:450px) {
+    section{
+        min-height: 80vh;
+        padding: 8.62rem .6rem;
+    }
+    html {
+        font-size: 75%;
+    }
+    #logo{
+        margin-left: 2.2rem;
+    }
+    #menu li {
+        margin-left: 2.5rem;
+    }
+    .navbar{
+        z-index: 999;
+    }
+    .left{
+        width: 100%;
+    }
+    .left .reseux span{
+        margin-right: 0.1rem;
+    }
+    .reseux{
+        margin-top: 2rem;
+    }
+    .left .greeting{
+        font-size: 2rem;
+          
+    }
+    .text{
+        padding: 0.5rem 0px ;
+    }
+    .portrait img{
+        margin-left: .4rem;
+    }
+    .Apropos{
+        display: grid;
+        align-items: center;
+    }
+    .portrait .dots-circle svg{
+        position: absolute;
+        width: 29rem;
+        left: 0;
+        bottom: -4.5rem !important;
+        
+    }
+    .svg {
+        width: 75%;
+    }
+    /* .portrait .dots-circle svg{
+        display: none;
+    } */
+    svg {
+        width: 125%;
+        position: relative;
+        bottom: 6rem;
+    }
+    article{
+        text-align: initial;
+        padding: .6rem;
+    }
+}
