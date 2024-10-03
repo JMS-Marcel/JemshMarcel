@@ -1,12 +1,12 @@
 @font-face {
   font-family: Poppins;
-  src: url(src/assets/fonts/Poppins/Poppins-Medium.ttf);
+  src: url(/src/assets/fonts/Poppins/Poppins-Medium.ttf);
   /* ../Poppins/Poppins-Medium.ttf */
 }
 
 @font-face {
   font-family: PoppinsBold;
-  src: url(src/assets/fonts/Poppins/Poppins-ExtraBold.ttf);
+  src: url(/src/assets/fonts/Poppins/Poppins-ExtraBold.ttf);
 }
 
 ::-webkit-scrollbar{
