@@ -3,23 +3,33 @@
         <h1 class="heading">MES <span>PROJETS</span></h1>
         <div class="box-container">
           
-          <div class="box">
+          <div class="box" 
+          v-for="project in projects"
+          :key="project.id"
+          >
             <div class="mini-box">
-              <a href="https://jms-marcel.github.io/MusicWeb/" target="_blank"><img src="/images/img-1.png" alt="AppMusic" /></a>
+              <a href="https://jms-marcel.github.io/MusicWeb/" target="_blank"><img :src="project.img" alt="AppMusic" /></a>
             </div>
             <h2>
-              AppMusic 🎵🎵🎵
+              {{project.title}}
             </h2>
             <div class="content">
-              <p>Lorem ipsum dolor sit amet ,jemsh marcel consectetur...</p>
+              <p>{{ project.content.substring(0, 60) + "..." }}</p>
             </div>
-            <a href="#Portfolio" class="btn">Lien GitHub</a>
+            <a :href="project.linkGit" class="btn">Lien GitHub <i class="fa fa-github"></i></a>
           </div>
 
          
         </div>
       </section>
 </template>
+<script setup>
+import cardData from '@/portfolioData.json';
+import { ref } from 'vue';
+
+const projects = ref(cardData);
+console.log(projects.value);
+</script>
 
 <style scoped>
 .box-container {
@@ -47,6 +57,7 @@
     box-shadow: var(--box-shadow);
 }
 
+
 .portfolio .box-container .box img {
     border-radius: .5rem;
     height: 95%;
@@ -57,8 +68,12 @@
     height: calc(95% + 3px);
     width: calc(98% + 3px);
 }
+.portfolio .box-container .box h2{
+  color:#006ff2;
+}
 .portfolio .box-container .box .content p{
   font-size: 14px;
+  color:var(--black);
 }
 .portfolio .box-container .box .btn{
   display: block;

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "img": "/images/img-1.png",
+    "title": "lorem",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab. consectetur adipisicing elit. Consequatur",
+    "linkGit": "#Portfolio"
+
+  },
+  {
+    "id": "2",
+    "img": "/images/img-2.jpg",
+    "title": "lorem1",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ",
+    "linkGit": "#Portfolio"
+
+  },
+  {
+    "id": "3",
+    "img": "/images/img-3.png",
+    "title": "lorem2",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur",
+    "linkGit": "#Portfolio"
+
+  }
+]

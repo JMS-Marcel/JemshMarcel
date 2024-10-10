@@ -1,5 +1,4 @@
 <script setup>
-  import buttonBlue from '@/components/buttonBlue.vue';
   import svgCoding from '@/components/svg.vue';
 </script>
 
@@ -16,7 +15,7 @@
             inspirer par mon travail passionné.
           </p>
           <!-- <a href="#Contact" class="btn">Contactez moi </a> -->
-           <buttonBlue href="#Contact" class="btn">Contactez moi</buttonBlue>
+           <a href="#Contact" class="btn">Contactez moi</a>
 
           <div class="reseux">
             <span>Me trouver: </span>
